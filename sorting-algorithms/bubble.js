@@ -19,3 +19,24 @@ Variants:
 (https://en.wikipedia.org/wiki/Cocktail_sort)
 
 */
+
+var bubbleSort = function(array) {
+	var wall = array.length;
+	while (wall >= 0) {
+		for (var i = 0; i < wall; i++) {
+			if (array[i] > array[i + 1]) {
+				array = swap(array, i, i + 1);
+			}
+		}
+		wall--;
+	}
+	return array;
+};
+
+var swap = function(arr, i1, 12) {
+	var int1 = arr[i1];
+	var int2 = arr[i2];
+	arr[i] = int2;
+	arr[i2] = int1;
+	return arr;
+};
