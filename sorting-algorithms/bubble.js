@@ -40,3 +40,6 @@ var swap = function(arr, i1, 12) {
 	arr[i2] = int1;
 	return arr;
 };
+
+
+// runtime: O(n2)
